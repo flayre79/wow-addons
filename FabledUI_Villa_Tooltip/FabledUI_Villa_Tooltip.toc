@@ -1,0 +1,14 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Villa Tooltip
+## Notes: Where a decor item comes from, in its tooltip: vendor and cost, drop and instance, profession and materials, achievement and criteria, gates, expansion and zone.
+## Author: FabledUI
+## Version: 0.1.0
+## X-Nexus-ShortName: Villa Tooltip
+## IconTexture: 134414
+## Category: FabledUI
+## Dependencies: FabledUI_Villa_Decor
+## OptionalDeps: FabledUI_DataVault_Villa
+## SavedVariables: FabledUI_VillaTooltipDB
+
+Card.lua
+Tooltip.lua

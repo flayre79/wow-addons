@@ -1,0 +1,15 @@
+﻿## Interface: 120105, 120100, 120007
+## Title: FabledUI - Villa Decor
+## Notes: Uncollected decor that still pays first-acquisition House XP, cheapest first, with prerequisites checked live and vendor waypoints.
+## Author: FabledUI
+## Version: 0.2.1
+## X-Nexus-ShortName: Villa Decor
+## IconTexture: 134414
+## Category: FabledUI
+## OptionalDeps: FabledUI_Villa_House, FabledUI_DataVault_Villa, FabledUI_Odyssey, TomTom
+## SavedVariables: FabledUI_VillaDecorDB
+
+Source.lua
+Core.lua
+Prereqs.lua
+Window.lua

@@ -1,0 +1,19 @@
+## Interface: 110200, 110205, 110207, 120000
+## Title: |cFFEEE4AEFishing Tracker|r
+## Notes: |cff58C6FATracks fishing statistics with advanced features|r
+## Category: Professions
+## IconTexture: 4620674
+## Author: Pepsi
+## Version: 1.68
+## SavedVariables: FishingTrackerDB
+## OptionalDeps: Ace3, AceLocale-3.0, LibStub, LibGraph-2.0
+
+Libs\LibGraph-2.0\LibStub.lua
+Libs\LibGraph-2.0\LibGraph-2.0\LibGraph-2.0.lua
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Locales\Localization.xml
+FishingTracker_BuffData.lua
+FishingTracker_FishData.lua
+FishingTracker_ZoneData.lua
+FishingTracker_FBtoFT_Converter.lua
+FishingTracker.lua

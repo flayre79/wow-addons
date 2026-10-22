@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Villa Cornerstone
+## Notes: Mouse over a neighborhood cornerstone to see its plot and who owns it.
+## Author: FabledUI
+## Version: 0.3.1
+## X-Nexus-ShortName: Villa Cornerstone
+## IconTexture: 134414
+## Category: FabledUI
+## SavedVariables: FabledUI_VillaCornerstoneDB
+
+Cornerstone.lua
+Stones.lua

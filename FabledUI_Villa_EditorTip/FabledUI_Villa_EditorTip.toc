@@ -1,0 +1,11 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Villa Editor Tip
+## Notes: Adds the decor budget cost to the tooltip shown when you hover placed decor in the house editor.
+## Author: FabledUI
+## Version: 0.1.0
+## X-Nexus-ShortName: Villa Editor Tip
+## IconTexture: 134414
+## Category: FabledUI
+## SavedVariables: FabledUI_VillaEditorTipDB
+
+EditorTip.lua

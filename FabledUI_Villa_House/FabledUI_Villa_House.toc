@@ -1,0 +1,14 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Villa House
+## Notes: House level and House XP: an always-visible bar, the endeavor task list with real XP, and the housing state other addons read.
+## Author: FabledUI
+## Version: 0.2.2
+## X-Nexus-ShortName: Villa House
+## IconTexture: 134414
+## Category: FabledUI
+## SavedVariables: FabledUI_VillaHouseDB
+
+Core.lua
+Bar.lua
+Tasks.lua
+TaskList.lua
