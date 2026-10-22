@@ -1,0 +1,10 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault (Poseidon Shard)
+## Notes: High-volume sharded storage for fishing nodes, pools, and history.
+## Author: FabledUI
+## Version: 1.1.0
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault
+## SavedVariables: FabledUI_PoseidonDB
+
+Shard.lua

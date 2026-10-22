@@ -1,0 +1,18 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault
+## Notes: Centralized persistence, namespaces, sharding, and profiles for the FabledUI suite.
+## Version: 1.0.0
+## Author: FabledUI
+## Category: FabledUI
+## OptionalDeps: FabledUI_UIToolkit
+## SavedVariables: DataVaultDB, DataVaultRealmDB
+## SavedVariablesPerCharacter: DataVaultCharDB
+
+Core.lua
+Storage.lua
+Sharding.lua
+Modules.lua
+Profiles.lua
+UI.lua
+DataVault_Minimap.lua
+Settings.lua

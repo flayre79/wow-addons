@@ -1,0 +1,10 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault (Crafty Shard)
+## Notes: High-volume sharded storage for Crafty optimized-cost cache.
+## Author: FabledUI
+## Version: 1.0.0
+## Category: FabledUI
+## Dependencies: FabledUI_Crafty, FabledUI_DataVault
+## SavedVariables: FabledUI_DataVault_CraftyDB
+
+Shard.lua

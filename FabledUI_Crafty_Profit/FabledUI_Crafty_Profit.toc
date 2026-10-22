@@ -1,0 +1,11 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Profit Engine)
+## Notes: Crafty Module — profit-per-craft calculation including multicraft, resourcefulness, and concentration cost amortization.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+Profit.lua

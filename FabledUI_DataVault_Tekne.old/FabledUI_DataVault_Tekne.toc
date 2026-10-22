@@ -1,0 +1,10 @@
+## Interface: 120100, 120007
+## Title: FabledUI - DataVault (Tekne Shard)
+## Notes: Sharded storage for Tekne profession data (alt knowledge, queue, history).
+## Author: FabledUI
+## Version: 1.0.0
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault
+## SavedVariables: FabledUI_TekneDB
+
+Shard.lua

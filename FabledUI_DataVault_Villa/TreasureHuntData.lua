@@ -1,0 +1,185 @@
+-- TreasureHuntData.lua
+-- Provider: Villa.CodexData.TreasureHunt
+--
+-- Source: HousingCodex 2.5.3 - Core/TreasureHuntData.lua (114 LOC)
+-- See: .sample-addons/HousingCodex/Core/TreasureHuntData.lua
+--
+-- Pending offline pipeline import from HousingCodex 2.5.3.
+-- Schema framework only; the full quest -> coordinate harvest is handled by
+-- a separate sprint (tools/data-pipeline/sources/villa-housing-importer.py).
+--
+-- ============================================================================
+-- SCHEMA DOCUMENTATION
+-- ============================================================================
+-- Quest ID -> location mapping for Decor Treasure Hunt daily quests.
+-- Coordinates are 0-1 normalized so they can be passed straight to
+-- UiMapPoint.CreateFromCoordinates.
+--
+-- TreasureHunt = {
+--     locations = {
+--         [questID] = { mapID = number, x = number, y = number },
+--         ...
+--     },
+-- }
+--
+-- Known map regions in the source data:
+--   2352 - Founder's Point   (Alliance neighborhood)
+--   2351 - Razorwind Shores  (Horde neighborhood)
+-- ============================================================================
+
+local Providers = _G.FabledUI_DataVault_VillaProviders or {}
+_G.FabledUI_DataVault_VillaProviders = Providers
+
+local function _CurrentVilla()
+    return _G.FabledUI_Villa or {}
+end
+
+local Villa = setmetatable({}, {
+    __index = function(_, key)
+        local current = _CurrentVilla()
+        local value = current[key]
+        if value ~= nil then
+            return value
+        end
+        if key == "RegisterModule" or key == "RegisterEngine" then
+            return function() end
+        end
+        return nil
+    end,
+    __newindex = function(_, key, value)
+        local current = _G.FabledUI_Villa
+        if current then
+            current[key] = value
+        end
+    end,
+})
+
+local CodexData = Providers["codex"] or {}
+Providers["codex"] = CodexData
+Villa.CodexData = Villa.CodexData or CodexData
+
+local TreasureHunt = CodexData.TreasureHunt or {
+    __source  = "housingcodex",
+    __version = "2026-05-04-housingcodex2.5.3-full",
+    __notes   = "Full quest -> coordinate import from HousingCodex 2.5.3. " ..
+                "See .sample-addons/HousingCodex/Core/TreasureHuntData.lua.",
+
+    locations = {
+        -- Alliance (Founder's Point, mapID 2352)
+        [92437] = { mapID = 2352, x = 0.6223, y = 0.3830 },
+        [92961] = { mapID = 2352, x = 0.5813, y = 0.3008 },
+        [92962] = { mapID = 2352, x = 0.6921, y = 0.2671 },
+        [92963] = { mapID = 2352, x = 0.6312, y = 0.4674 },
+        [92964] = { mapID = 2352, x = 0.6487, y = 0.5099 },
+        [92965] = { mapID = 2352, x = 0.5959, y = 0.5244 },
+        [92966] = { mapID = 2352, x = 0.6688, y = 0.5702 },
+        [92967] = { mapID = 2352, x = 0.5834, y = 0.6504 },
+        [92968] = { mapID = 2352, x = 0.5282, y = 0.6683 },
+        [92969] = { mapID = 2352, x = 0.5541, y = 0.7150 },
+        [92970] = { mapID = 2352, x = 0.3910, y = 0.5995 },
+        [92971] = { mapID = 2352, x = 0.4085, y = 0.6131 },
+        [92972] = { mapID = 2352, x = 0.4542, y = 0.6434 },
+        [92973] = { mapID = 2352, x = 0.4632, y = 0.5797 },
+        [92974] = { mapID = 2352, x = 0.5505, y = 0.5071 },
+        [92975] = { mapID = 2352, x = 0.4989, y = 0.5661 },
+        [92976] = { mapID = 2352, x = 0.4769, y = 0.6197 },
+        [92977] = { mapID = 2352, x = 0.6456, y = 0.8559 },
+        [92978] = { mapID = 2352, x = 0.5418, y = 0.7363 },
+        [92979] = { mapID = 2352, x = 0.6161, y = 0.7944 },
+        [92980] = { mapID = 2352, x = 0.2862, y = 0.4671 },
+        [92981] = { mapID = 2352, x = 0.2985, y = 0.4832 },
+        [92982] = { mapID = 2352, x = 0.6188, y = 0.8254 },
+        [92983] = { mapID = 2352, x = 0.4247, y = 0.4476 },
+        [92984] = { mapID = 2352, x = 0.4269, y = 0.5392 },
+        [92985] = { mapID = 2352, x = 0.3709, y = 0.4592 },
+        [92986] = { mapID = 2352, x = 0.3660, y = 0.5412 },
+        [92987] = { mapID = 2352, x = 0.3661, y = 0.5785 },
+        [92988] = { mapID = 2352, x = 0.3461, y = 0.6043 },
+        [92989] = { mapID = 2352, x = 0.3399, y = 0.7268 },
+        [92990] = { mapID = 2352, x = 0.4972, y = 0.4242 },
+        [92991] = { mapID = 2352, x = 0.4918, y = 0.2713 },
+        [92992] = { mapID = 2352, x = 0.4100, y = 0.2837 },
+        [92993] = { mapID = 2352, x = 0.3995, y = 0.3195 },
+        [92994] = { mapID = 2352, x = 0.3692, y = 0.3293 },
+        [92995] = { mapID = 2352, x = 0.3086, y = 0.3112 },
+        [92996] = { mapID = 2352, x = 0.2904, y = 0.2817 },
+        [92997] = { mapID = 2352, x = 0.2112, y = 0.3006 },
+        [92998] = { mapID = 2352, x = 0.2620, y = 0.3791 },
+        [92999] = { mapID = 2352, x = 0.2833, y = 0.4014 },
+        [93000] = { mapID = 2352, x = 0.5924, y = 0.4493 },
+        [93001] = { mapID = 2352, x = 0.5682, y = 0.5229 },
+        [93002] = { mapID = 2352, x = 0.5781, y = 0.4204 },
+        [93003] = { mapID = 2352, x = 0.5665, y = 0.2751 },
+        [93004] = { mapID = 2352, x = 0.5534, y = 0.3996 },
+        [93005] = { mapID = 2352, x = 0.6031, y = 0.5682 },
+        [93006] = { mapID = 2352, x = 0.5365, y = 0.3979 },
+        [93007] = { mapID = 2352, x = 0.5734, y = 0.3926 },
+        [93008] = { mapID = 2352, x = 0.5244, y = 0.2880 },
+        [93009] = { mapID = 2352, x = 0.5360, y = 0.4194 },
+
+        -- Horde (Razorwind Shores, mapID 2351)
+        [93073] = { mapID = 2351, x = 0.5373, y = 0.5022 },
+        [93074] = { mapID = 2351, x = 0.5559, y = 0.4979 },
+        [93075] = { mapID = 2351, x = 0.5640, y = 0.4802 },
+        [93077] = { mapID = 2351, x = 0.5799, y = 0.4891 },
+        [93078] = { mapID = 2351, x = 0.6360, y = 0.4481 },
+        [93079] = { mapID = 2351, x = 0.6229, y = 0.4890 },
+        [93080] = { mapID = 2351, x = 0.6266, y = 0.5166 },
+        [93081] = { mapID = 2351, x = 0.7029, y = 0.4980 },
+        [93082] = { mapID = 2351, x = 0.6893, y = 0.5248 },
+        [93083] = { mapID = 2351, x = 0.7212, y = 0.4165 },
+        [93084] = { mapID = 2351, x = 0.6072, y = 0.6450 },
+        [93085] = { mapID = 2351, x = 0.3865, y = 0.8026 },
+        [93087] = { mapID = 2351, x = 0.5557, y = 0.5240 },
+        [93088] = { mapID = 2351, x = 0.6373, y = 0.5623 },
+        [93091] = { mapID = 2351, x = 0.6465, y = 0.5804 },
+        [93097] = { mapID = 2351, x = 0.5776, y = 0.6345 },
+        [93098] = { mapID = 2351, x = 0.6825, y = 0.6895 },
+        [93099] = { mapID = 2351, x = 0.6817, y = 0.7574 },
+        [93100] = { mapID = 2351, x = 0.6481, y = 0.7304 },
+        [93101] = { mapID = 2351, x = 0.6187, y = 0.7866 },
+        [93102] = { mapID = 2351, x = 0.6204, y = 0.8870 },
+        [93103] = { mapID = 2351, x = 0.5793, y = 0.8628 },
+        [93104] = { mapID = 2351, x = 0.5801, y = 0.7995 },
+        [93105] = { mapID = 2351, x = 0.5380, y = 0.8205 },
+        [93106] = { mapID = 2351, x = 0.5217, y = 0.8177 },
+        [93107] = { mapID = 2351, x = 0.5344, y = 0.8464 },
+        [93108] = { mapID = 2351, x = 0.5039, y = 0.8302 },
+        [93109] = { mapID = 2351, x = 0.4777, y = 0.8839 },
+        [93110] = { mapID = 2351, x = 0.4422, y = 0.8676 },
+        [93111] = { mapID = 2351, x = 0.3951, y = 0.7014 },
+        [93115] = { mapID = 2351, x = 0.4217, y = 0.6631 },
+        [93131] = { mapID = 2351, x = 0.4475, y = 0.6636 },
+        [93132] = { mapID = 2351, x = 0.4263, y = 0.5039 },
+        [93133] = { mapID = 2351, x = 0.5173, y = 0.8005 },
+        [93134] = { mapID = 2351, x = 0.4527, y = 0.5635 },
+        [93135] = { mapID = 2351, x = 0.4555, y = 0.5694 },
+        [93136] = { mapID = 2351, x = 0.4718, y = 0.5970 },
+        [93137] = { mapID = 2351, x = 0.5178, y = 0.7266 },
+        [93138] = { mapID = 2351, x = 0.5905, y = 0.7366 },
+        [93139] = { mapID = 2351, x = 0.6453, y = 0.6921 },
+        [93140] = { mapID = 2351, x = 0.5715, y = 0.5827 },
+        [93141] = { mapID = 2351, x = 0.5036, y = 0.7680 },
+        [93142] = { mapID = 2351, x = 0.5096, y = 0.6156 },
+        [93143] = { mapID = 2351, x = 0.4954, y = 0.6004 },
+        [93147] = { mapID = 2351, x = 0.5097, y = 0.8963 },
+        [93148] = { mapID = 2351, x = 0.4325, y = 0.6944 },
+        [93149] = { mapID = 2351, x = 0.3924, y = 0.7401 },
+        [93150] = { mapID = 2351, x = 0.3934, y = 0.5761 },
+        [93151] = { mapID = 2351, x = 0.4003, y = 0.7851 },
+        [93152] = { mapID = 2351, x = 0.5866, y = 0.6949 },
+    },
+
+    -- Map regions referenced by the source data. Provided here so consumers
+    -- can build map filter UIs ahead of the bulk import.
+    knownMaps = {
+        [2352] = { name = "Founder's Point",  faction = "Alliance" },
+        [2351] = { name = "Razorwind Shores", faction = "Horde"    },
+    },
+}
+
+CodexData.TreasureHunt = TreasureHunt
+
+if Villa.RegisterModule and type(Villa.RegisterModule) == "function" then
+    Villa:RegisterModule("CodexData.TreasureHunt", TreasureHunt)
+end

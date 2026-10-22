@@ -1,0 +1,15 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault Villa (Catalog)
+## Notes: Bulk housing catalog providers. LoadOnDemand: ~176k lines that only matter once something asks for housing data.
+## Author: FabledUI
+## Version: 0.30.00
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault_Villa
+## LoadOnDemand: 1
+
+HITData.lua
+HousingVendorData.lua
+DecorVendorData.lua
+HDGData.lua
+BetterHomesData.lua
+NormalizedData.lua

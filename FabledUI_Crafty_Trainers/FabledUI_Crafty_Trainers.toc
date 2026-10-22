@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Trainer Codex)
+## Notes: Crafty Module — trainer locations + skill-up paths across every expansion.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+Trainers.lua
+Training.lua

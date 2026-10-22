@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Reagent Picker)
+## Notes: Crafty Module — recommends optional and finishing reagents to hit a quality target with minimum cost.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+ReagentTiers.lua
+ReagentOptimizer.lua

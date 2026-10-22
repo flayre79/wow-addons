@@ -1,0 +1,10 @@
+## Interface: 120100, 120007
+## Title: FabledUI - DataVault (Hearth Shard)
+## Notes: High-volume sharded storage for Housing decor, vendor catalogs, and player notes.
+## Author: FabledUI
+## Version: 1.0.0
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault
+## SavedVariables: FabledUI_HearthDB
+
+Shard.lua

@@ -1,0 +1,10 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault (Kleos Shard)
+## Notes: Sharded storage for the Kleos criteria asset index and other derived bulk data.
+## Author: FabledUI
+## Version: 1.1.0
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault
+## SavedVariables: FabledUI_KleosShardDB
+
+Shard.lua

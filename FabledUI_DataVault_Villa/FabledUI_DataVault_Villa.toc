@@ -1,0 +1,15 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault Villa
+## Notes: DataVault shard for Villa housing providers and Villa account state. Bulk catalog data lives in the LoadOnDemand FabledUI_DataVault_Villa_Catalog shard.
+## Author: FabledUI
+## Version: 0.30.00
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault
+## SavedVariables: FabledUI_VillaShardDB
+Bootstrap.lua
+HomeData.lua
+CodexData.lua
+EndeavorsData.lua
+RenownData.lua
+DecorIndex.lua
+TreasureHuntData.lua

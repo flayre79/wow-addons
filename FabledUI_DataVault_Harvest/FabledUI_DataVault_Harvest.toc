@@ -1,0 +1,10 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - DataVault (Harvest Shard)
+## Notes: High-volume sharded storage for gathering nodes and loot tables.
+## Author: FabledUI
+## Version: 1.1.0
+## Category: FabledUI
+## Dependencies: FabledUI_DataVault
+## SavedVariables: FabledUI_HarvestDB
+
+Shard.lua

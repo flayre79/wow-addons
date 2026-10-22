@@ -1,0 +1,15 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Tooltip Enrichment)
+## Notes: Crafty Module — profession icons, upgrade indicators, raid token details, milling/prospecting hints in item tooltips.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+ItemMetadata.lua
+Tooltip.lua
+UpgradeIcons.lua
+GearTokens.lua
+Assistance.lua
