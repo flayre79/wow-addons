@@ -1,0 +1,29 @@
+Crafty 3.0.0 - Rationalization Pass
+
+Phase 1
+- Unified queue/material/shopping ownership around Shopping.lua.
+- Queue planner now uses one core entry model with recursive planning as a strategy, not a second queue engine.
+- Materials and shopping export now read from the same material graph.
+- Removed the old hardcoded lumber fallback from Materials in favor of Lumber ownership.
+
+Phase 2
+- Replaced stacked tooltip post-hooks with one unified tooltip compositor.
+- Profession-use display now behaves as OFF / ICONS / TEXT / BOTH modes.
+- Assistance, token, and era metadata are rendered in one ordered tooltip pipeline.
+
+Phase 3
+- Knowledge is checklist truth.
+- Guide is progression route.
+- Advisor is summary-only.
+
+Phase 4
+- Concentration surface renamed and consolidated into Timers.
+- Timers now presents concentration and cooldown rows through one wrapper service.
+
+Phase 5
+- Legacy aliases were cleaned into explicit compatibility toggles instead of being hardwired everywhere.
+- Canonical API is FabledUI_CraftyAPI.
+- Legacy globals/slash aliases remain enabled by default for migration-safe UAT.
+
+Phase 6
+- Added a coherent Gearing tab for profession gear + specialization + overlay/token system context.

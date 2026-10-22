@@ -1,0 +1,28 @@
+Crafty 2.7.0 donor wave 2
+
+Implemented
+- Fixed Crafty storage to use DataVault core paths for the main database, settings, and filters when DataVault is available.
+- Added one-time migration/import path from legacy Professionarium / Metis SavedVariables into DataVault core storage.
+- Added WeeklyKnowledge donor integration:
+  - KnowledgeData import for TWW + Midnight
+  - Knowledge tab with summary rows, detailed objective rows, and waypoint support
+  - category toggles for weekly, treasure, unique, gathering, and first-craft rows
+- Added ProfessionTrainingGuide donor integration:
+  - retail guide data import for Alchemy, Blacksmithing, Enchanting, Engineering, Inscription, Jewelcrafting, Leatherworking, Tailoring
+  - Guide tab focused around current skill with optional full-guide mode
+  - advisor rows for current guide step
+- Added TokenTransmogTooltips donor integration:
+  - simplified token metadata map
+  - tooltip lines for supported raid token items showing raid, class family, slot family, difficulty, and player-class eligibility
+- Added ProfessionShoppingList compatibility features:
+  - TrackRecipe / UntrackRecipe API compatibility
+  - queue entries can now store recraft and orderID metadata
+  - PSL-like shopping list text mode toggle
+  - global ProfessionShoppingList compatibility alias
+- Added advisor rows for knowledge checklist, retail guide status, PSL-like mode, and token tooltip mode.
+- Added new slash targets: /crafty knowledge and /crafty guide
+
+Known limitations
+- Token tooltip donor import is a simplified metadata map, not the donor addon’s full appearance-source resolution engine.
+- Knowledge tab is intentionally capped to the first 180 detailed rows for UI sanity; summary rows still cover the whole dataset.
+- PTG retail guide import currently covers the major crafting professions, not gathering professions.

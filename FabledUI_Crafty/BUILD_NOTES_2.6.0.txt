@@ -1,0 +1,23 @@
+Crafty 2.6.0 Build Notes
+
+Identity / structure
+- Renamed the addon to FabledUI_Crafty.
+- Preserved compatibility aliases for old Professionarium globals, slash commands, and saved-data migration.
+- Kept the addon as a single package with DataVault-first storage.
+
+Donor intake wave 1
+- ItemTooltipProfessionIcons: imported profession-use tooltip icon support with Crafty settings for icon size, vendor inclusion, icon style, and per-profession filtering.
+- ItemUpgradeQualityIcons: imported upgrade-track tooltip markers plus optional overlay icons for gear in bags, equipment, bank, loot, and equipment flyouts.
+- ConcentrationTracker: expanded Crafty concentration support with full alerts, target forecasting, export text, and an in-window concentration tab.
+- ProfessionsAdvisor: Classic-only leveling-path data was NOT imported into Retail Crafty. Instead, the addon now includes a Retail-safe Advisor tab that surfaces actionable guidance from Crafty's live profession, queue, material, trainer, tooltip, and concentration data.
+
+New UI surfaces
+- Advisor tab
+- Concentration tab
+- Concentration export
+- Expanded settings for tooltip, gearing, and concentration features
+
+Migration / compatibility
+- Loads legacy Professionarium/Metis saved data when present.
+- Preserves _G.FabledUI_ProfessionariumAPI alongside _G.FabledUI_CraftyAPI.
+- Preserves /professionarium, /prof, and /tekne as slash aliases alongside /crafty.

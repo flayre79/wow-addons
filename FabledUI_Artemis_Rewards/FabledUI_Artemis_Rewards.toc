@@ -1,0 +1,10 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Artemis (Rewards Module)
+## Notes: Reward enrichment child module for Artemis.
+## Author: FabledUI
+## Version: 2.6.0
+## Category: FabledUI
+## Dependencies: FabledUI_Artemis
+## LoadWith: FabledUI_Artemis
+
+Rewards.lua

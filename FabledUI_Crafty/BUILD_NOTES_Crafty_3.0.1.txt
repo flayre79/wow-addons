@@ -1,0 +1,9 @@
+FabledUI_Crafty 3.0.1 hotfix
+
+Fixed:
+- AssistanceData.lua syntax error caused by missing closing table braces before D.milling and D.prospecting
+- Added a safe local fallback for donor localization key usage (Frozen Herb) in AssistanceData.lua
+- Rewrote Advisor.lua with simpler defensive access patterns to avoid brittle parser/runtime edge cases
+
+Validation:
+- All Lua files in the packaged addon pass texluac syntax validation in-container

@@ -1,0 +1,43 @@
+FabledUI_Crafty 2.8.0 - Donor Wave 3
+
+Integrated donor sources:
+- ItemEra
+- Profession_Assistance
+- ProfessionShoppingList
+- ThendarsLumberTracker
+
+What changed
+- Added ItemEra-style expansion-era tooltip lines inside Crafty
+- Added optional profession text labels alongside existing profession tooltip icons
+- Added Profession Assistance tooltip helpers for:
+  - milling / herb outcomes
+  - prospecting / ore outcomes
+  - disenchant result / source hints
+  - optional source-zone display
+  - optional item icons in result rows
+- Added Lumber Tracker category data for full lumber breakdown by expansion
+- Replaced old hardcoded lumber total with donor-backed lumber category totals
+- Added Midnight one-time profession knowledge rows from Lumber Tracker into Crafty Knowledge
+- HUD now surfaces donor-backed lumber breakdown context
+- Added /psl slash alias for Crafty PSL-compat workflows
+- Added API helpers:
+  - GetLumberBreakdown()
+  - GetItemExpansionName(itemID)
+  - GetProfessionAssistance(itemID)
+
+Data / storage
+- Remains single-addon architecture
+- Remains DataVault-first for db/settings/filters
+- No donor child addon shells were imported
+
+UAT focus
+- Tooltip stacking order and readability
+- Expansion line + profession text toggles
+- Milling / prospecting / disenchant helper coverage on supported items
+- Knowledge tab visibility of new Midnight one-time treasure rows
+- HUD lumber totals versus inventory reality
+- /psl alias behavior with existing queue/shopping workflows
+
+Known implementation note
+- ItemEra's huge correction DB and external bag-addon filter shell were not imported as standalone systems.
+  Crafty absorbed the tooltip-era concept and metadata surface, while keeping the addon single-package and Retail-safe.

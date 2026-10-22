@@ -1,0 +1,17 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Athena
+## Notes: Addon Manager: profiles + custom categories
+## Author: FabledUI
+## Version: 1.6.0
+## Category: FabledUI
+## OptionalDeps: FabledUI_DataVault, FabledUI_Nexus, FabledUI_UIToolkit
+## SavedVariables: FabledUI_AthenaDB
+## SavedVariablesPerCharacter: FabledUI_AthenaCharDB
+
+Core.lua
+Util.lua
+Storage.lua
+AddOns.lua
+Profiles.lua
+Categories.lua
+UI.lua

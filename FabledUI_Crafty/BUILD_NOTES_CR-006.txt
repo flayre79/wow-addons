@@ -1,0 +1,77 @@
+FabledUI_Crafty CR-006 / CR-006b
+================================
+
+CR-006 - Queue tab Materials column: text vs icons toggle
+---------------------------------------------------------
+
+Storage.lua
+- Added new persisted filter flag: M.filters.materialsAsIcons (default false).
+  When true, the Queue tab renders the Materials column as a row of small
+  item icons with a stack-count overlay; when false the legacy text format
+  ("Name xN, Name xN, ...") is preserved.
+
+UI.lua
+- Added module-local helpers near BuildMaterialSummary:
+    MAT_ICON_SIZE = 20, MAT_ICON_SPACING = 2
+    GetMaterialIcon(row, parent, index)
+    ReleaseMaterialIcons(row)
+    RenderMaterialIcons(row, parentColumn, recipe, quantity)
+  These pool 20x20 frames per row. Each icon uses Item:CreateFromItemID()
+  with ContinueOnItemLoad to fill the texture and resolved item name once
+  the client cache is ready, with a fallback to GetItemIcon. OnEnter shows
+  the full Blizzard item tooltip via GameTooltip:SetHyperlink (or
+  SetItemByID) plus a "Required: N" line; OnLeave hides the tooltip.
+
+- Added UI:EnsureQueueMaterialsIconsToggle()
+  Lazy-creates a "Icons" UICheckButtonTemplate anchored to the right side
+  of the existing tabBar so it sits inline with the Queue tab and never
+  overlaps the column header strip. Persists the choice via M:SaveSettings()
+  and refreshes the active tab immediately.
+
+- UI:RenderQueue()
+  Surfaces the toggle whenever the Queue tab is rendered, picks
+  iconsMode = M.filters.materialsAsIcons, then either:
+    if iconsMode then RenderMaterialIcons(row, row.columns[4], recipe, qty)
+    else                row.columns[4]:SetText(BuildMaterialSummary(...))
+  ReleaseMaterialIcons(row) is also called in the text branch so toggling
+  back to text immediately clears any pooled icons.
+
+- UI:RefreshActiveTab()
+  Hides the Icons toggle when the active tab is not the Queue tab, so the
+  control only appears in its proper context.
+
+- UI:ResetRow(row)
+  Calls ReleaseMaterialIcons(row) so pooled material icons never leak
+  between renders or onto other tabs (Recipes, Materials, Knowledge, etc.).
+
+CR-006b - Global UI Text Scale slider
+-------------------------------------
+
+Storage.lua
+- Added new persisted setting: M.settings.uiScale (default 1.0).
+  Range is 0.85 to 1.4, step 0.05.
+
+UI.lua
+- After the main shell window is constructed in UI:CreateShellWindow(),
+  UI:ApplyUIScale() is invoked so the persisted scale takes effect on cold
+  start without needing /reload.
+- Added UI:ApplyUIScale()
+  Reads M.settings.uiScale, clamps to [0.85, 1.4], and applies it via
+  frame:SetScale (wrapped in pcall for safety). Used both at creation and
+  whenever the Settings slider changes.
+
+Settings.lua
+- Added a slider ("UI Text Scale", 1.0 default, range 0.85..1.4, step 0.05)
+  near the top of the "Crafty" section. Tooltip explains it scales the
+  whole window for accessibility and that it applies immediately. The
+  callback saves settings and re-applies via M.UI:ApplyUIScale().
+
+Notes
+-----
+- Changes are additive; no existing behavior is removed.
+- Both flags survive the deepCopy/applyDefaults/copyInto migration paths
+  in Storage.lua because they live inside the existing defaults tables
+  and applyDefaults fills only missing keys.
+- The tabBar anchor for the Icons toggle uses RIGHT, -64 inset so it does
+  not collide with the right-edge tabBar trim. The HitRectInsets gives
+  the "Icons" label room to receive hover events.

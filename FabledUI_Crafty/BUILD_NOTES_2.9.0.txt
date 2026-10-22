@@ -1,0 +1,28 @@
+Crafty 2.9.0
+
+Major donor wave: CraftSim intake (engine harvest, not full addon clone)
+
+What landed
+- CraftSim-like recursive queue planner toggle
+- CraftSim-like profit engine toggle with recursive subcraft costing and expected reagent savings
+- profession gear snapshot capture for the open Retail profession
+- specialization snapshot capture using C_ProfSpecs + C_Traits
+- cooldown snapshot capture for recipes visible in the open profession window
+- craft-result logging via TRADE_SKILL_CRAFT_BEGIN / UNIT_SPELLCAST_SUCCEEDED / TRADE_SKILL_ITEM_CRAFTED_RESULT
+- merged activity history export now includes live craft results
+- Advisor expanded with loadout, specialization, cooldown, and craft-session status
+- Alts tooltip/details expanded with gear, spec, and cooldown summaries
+- Timers tab now includes both concentration and cooldown rows
+
+Important compare toggles
+- Use CraftSim-Like Queue Planner
+- Use CraftSim-Like Profit Engine
+- Profit: Use Subcraft Costs
+- Profit: Include Resourcefulness Savings
+- Auto-Decrement Queue On Craft
+- Enable Craft Result Logging
+
+Notes
+- This is still one addon, DataVault-first, and donor logic was absorbed into Crafty surfaces instead of imported as separate child addons.
+- Cooldown detection is strongest when the relevant profession window has been opened and scanned.
+- Specialization snapshots are summary-oriented; they do not yet reproduce full donor stat-weight simulation or top-gear solving.

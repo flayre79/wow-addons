@@ -1,0 +1,28 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty
+## Notes: Crafty Suite shell — recipes, queue, materials, and module coordinator. Optional feature modules (profit, top gear, knowledge, allocator, etc.) ship as sibling LoadOnDemand addons named FabledUI_Crafty_<Module>.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_UIToolkit
+## OptionalDeps: FabledUI_DataVault, FabledUI_Crafty_Data, FabledUI_Crafty_Advisor, FabledUI_Crafty_Allocator, FabledUI_Crafty_Concentration, FabledUI_Crafty_Guild, FabledUI_Crafty_History, FabledUI_Crafty_Knowledge, FabledUI_Crafty_Lumber, FabledUI_Crafty_Overlay, FabledUI_Crafty_Profit, FabledUI_Crafty_ReagentPicker, FabledUI_Crafty_Roster, FabledUI_Crafty_Specs, FabledUI_Crafty_Tooltips, FabledUI_Crafty_TopGear, FabledUI_Crafty_Trainers, FabledUI_Odyssey, Auctionator, TradeSkillMaster, Blizzard_Professions, TomTom
+## SavedVariables: FabledUI_CraftyDB, FabledUI_CraftySettings
+
+Core.lua
+Toolkit.lua
+Util.lua
+ModuleRegistry.lua
+Storage.lua
+Data.lua
+ExpansionData.lua
+Data\Specializations.lua
+Data\ReagentMetadata.lua
+ItemProfConstants.lua
+Recipes.lua
+Shopping.lua
+Queue.lua
+Materials.lua
+API.lua
+UI.lua
+Settings.lua

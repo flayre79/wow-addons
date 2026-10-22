@@ -1,0 +1,31 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Artemis
+## Notes: Parent quest tracker shell for Artemis modules.
+## Author: FabledUI
+## Version: 2.7.0
+## Category: FabledUI
+## OptionalDeps: FabledUI_DataVault, FabledUI_Nexus, FabledUI_Odyssey, FabledUI_UIToolkit, FabledUI_Artemis_Checklist, FabledUI_Artemis_Odyssey, FabledUI_Artemis_WorldQuests, FabledUI_Artemis_Objectives, FabledUI_Artemis_Rewards
+## SavedVariables: FabledUI_ArtemisDB
+
+Core.lua
+Storage.lua
+ModuleRegistry.lua
+Util.lua
+DataModel.lua
+QuestScan.lua
+Classifier.lua
+Sections.lua
+Menus.lua
+Events.lua
+# AR-A1: Currency tracker widget (load before Tracker so it can reference A.Currency).
+Currency.lua
+# Scenario/instance objective tracker (delves, dungeons, raids, M+, scenarios).
+Scenario.lua
+# Tracked profession recipes -- parity with the Blizzard tracker section we hide.
+Recipes.lua
+# Tracked Neighborhood Initiative tasks (endeavors) -- Kaliel's parity.
+Endeavors.lua
+# Tracked Traveler's Log activities -- Kaliel's parity.
+Activities.lua
+Tracker.lua
+Settings.lua

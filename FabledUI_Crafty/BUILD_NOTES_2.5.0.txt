@@ -1,0 +1,26 @@
+Crafty 2.5.0 Build Notes
+
+Implemented in this build:
+- Live profession recipe scanning from the open Retail profession window using C_TradeSkillUI.
+- Live recipe cache stored under db.cache.recipes and merged with static decor recipes.
+- Material chain awareness: materials now detect producer recipes when another recipe outputs the needed item.
+- Materials tab now shows Craft button for missing subcrafts and queues the producer recipe automatically.
+- Concentration tracking per character/profession using C_TradeSkillUI.GetConcentrationCurrencyID and C_CurrencyInfo.
+- Concentration surfaced in Alts tooltips and HUD.
+- Profession frame bridge panel added to ProfessionsFrame.CraftingPage.SchematicForm with +Queue, +5, and List buttons.
+- Public addon API exposed at _G.FabledUI_CraftyAPI.
+- Trainer routing now supports TomTom when installed, with native Blizzard waypoint fallback.
+- Expanded profession sort order to include gathering professions and archaeology.
+
+Important testing focus:
+- Open each profession and verify the recipe browser repopulates with live recipes.
+- Confirm queue entries created from the profession bridge buttons.
+- Check that crafted intermediates in Materials show Craft and queue correctly.
+- Validate concentration values update when changing profession data sources.
+- Validate TomTom waypoint creation when TomTom is enabled.
+- Validate static decor sample recipes still coexist with live recipes.
+
+Known limitation of this build:
+- Trainer dataset is still not exhaustive.
+- Live reagent extraction uses the required reagent schematic and picks one representative item for quality-based slots.
+- This build is code-audited here but not live-run in the WoW client.
