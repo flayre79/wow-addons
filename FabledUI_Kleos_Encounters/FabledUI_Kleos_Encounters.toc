@@ -1,0 +1,10 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Kleos (Encounter Guidance)
+## Notes: Criteria guidance for dungeon and raid achievements. Loaded on demand when Kleos detects an instance.
+## Author: FabledUI
+## Version: 1.0.0
+## Category: FabledUI
+## Dependencies: FabledUI_Kleos
+## LoadOnDemand: 1
+
+Guidance.lua

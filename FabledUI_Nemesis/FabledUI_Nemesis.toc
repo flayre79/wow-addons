@@ -1,0 +1,19 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Nemesis
+## Notes: Rare, treasure, and event tracker with alerts, map pins, suppression, and Explorer management.
+## Author: FabledUI
+## Version: 1.5.0
+## Category: FabledUI
+## Dependencies: FabledUI_UIToolkit
+## OptionalDeps: FabledUI_DataVault, FabledUI_DataVault_Nemesis, FabledUI_Odyssey, FabledUI_Nemesis_Data
+## SavedVariables: FabledUI_NemesisSettings, FabledUI_NemesisDB
+
+Core.lua
+Storage.lua
+Database.lua
+Nemesis_Respawn.lua
+Nemesis_Macro.lua
+Alerts.lua
+Map.lua
+Explorer.lua
+Settings.lua

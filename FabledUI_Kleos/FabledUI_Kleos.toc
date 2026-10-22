@@ -1,0 +1,40 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Kleos
+## Notes: Achievements suite: catalog browser, typed reward filters, criteria service, instance achievement tracking.
+## Author: FabledUI
+## Version: 1.2.1
+## X-Nexus-ShortName: Kleos
+## IconTexture: 236552
+## Category: FabledUI
+## OptionalDeps: FabledUI_DataVault, FabledUI_DataVault_Kleos, FabledUI_UIToolkit, FabledUI_Villa
+## SavedVariables: FabledUI_KleosDB
+## SavedVariablesPerCharacter: FabledUI_KleosCharDB
+
+Core.lua
+Util.lua
+Localization.lua
+Storage.lua
+Data.lua
+Catalog.lua
+Rewards.lua
+Meta.lua
+Criteria.lua
+Objectives.lua
+Encounter.lua
+GroupScan.lua
+Reminders.lua
+Skins.lua
+API.lua
+UI_Widgets.lua
+Tooltip.lua
+Tracker.lua
+UI.lua
+UI_Browse.lua
+UI_Detail.lua
+UI_Rewards.lua
+UI_Summary.lua
+UI_Calendar.lua
+UI_Data.lua
+UI_Menu.lua
+UI_Tutorial.lua
+Settings.lua

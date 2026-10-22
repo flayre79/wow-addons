@@ -1,0 +1,18 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Nemesis (Data)
+## Notes: LoadOnDemand data tables for FabledUI_Nemesis (RareScanner / MountCollector / HandyNotes_Midnight imports). Loaded by the parent on first Explorer open or first vignette match.
+## Author: FabledUI
+## Version: 1.5.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\Achievement_Boss_Archimonde
+## Dependencies: FabledUI_Nemesis
+## LoadOnDemand: 1
+
+Prelude.lua
+Data\RareNPCs.lua
+Data\Containers.lua
+Data\RareLoot.lua
+Data\Events.lua
+Data\MountSources.lua
+Data\MidnightRares.lua
+Data\MidnightTreasures.lua

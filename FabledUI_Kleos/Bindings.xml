@@ -1,0 +1,32 @@
+<Bindings>
+    <!-- Bindings.xml is loaded automatically from the addon folder; it is not
+         listed in the .toc. Every binding routes through one entry point so the
+         action list lives in Lua rather than in this file. -->
+    <Binding name="FABLEDUI_KLEOS_TOGGLE" header="BINDING_HEADER_FABLEDUI_KLEOS" category="ADDONS">
+        FabledUI_Kleos_Binding("TOGGLE")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_TRACKER" category="ADDONS">
+        FabledUI_Kleos_Binding("TRACKER")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_TAB1" category="ADDONS">
+        FabledUI_Kleos_Binding("TAB1")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_TAB2" category="ADDONS">
+        FabledUI_Kleos_Binding("TAB2")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_TAB3" category="ADDONS">
+        FabledUI_Kleos_Binding("TAB3")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_TAB4" category="ADDONS">
+        FabledUI_Kleos_Binding("TAB4")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_NEXTTAB" category="ADDONS">
+        FabledUI_Kleos_Binding("NEXTTAB")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_PREVTAB" category="ADDONS">
+        FabledUI_Kleos_Binding("PREVTAB")
+    </Binding>
+    <Binding name="FABLEDUI_KLEOS_ANNOUNCE" category="ADDONS">
+        FabledUI_Kleos_Binding("ANNOUNCE")
+    </Binding>
+</Bindings>
