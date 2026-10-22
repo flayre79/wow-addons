@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Prey Journey
+## Notes: Preyhunter's Journey level and progress on an always-visible bar, the hunt in progress above it, and the journey state other addons read.
+## Author: FabledUI
+## Version: 0.2.0
+## X-Nexus-ShortName: Prey Journey
+## IconTexture: Interface\Icons\Ability_Hunter_MarkedForDeath
+## Category: FabledUI
+## SavedVariables: FabledUI_PreyJourneyDB
+
+Core.lua
+Bar.lua

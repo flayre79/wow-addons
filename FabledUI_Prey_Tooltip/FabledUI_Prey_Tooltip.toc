@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Prey Tooltip
+## Notes: On the Prey hunt map, hovering a target lists the Prey achievements finishing that hunt would advance.
+## Author: FabledUI
+## Version: 0.2.0
+## X-Nexus-ShortName: Prey Tooltip
+## IconTexture: Interface\Icons\Ability_Hunter_MarkedForDeath
+## Category: FabledUI
+## SavedVariables: FabledUI_PreyTooltipDB
+
+Index.lua
+Tooltip.lua

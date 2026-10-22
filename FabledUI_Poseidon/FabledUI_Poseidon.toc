@@ -1,0 +1,46 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Poseidon
+## Notes: Fishing intelligence, node tracking, stats, hover intel, and UIToolkit-backed HUD/browser windows.
+## Author: FabledUI
+## Version: 3.5.1
+## Category: FabledUI
+## Dependencies: FabledUI_UIToolkit
+## OptionalDeps: FabledUI_DataVault, FabledUI_DataVault_Poseidon, FabledUI_Odyssey, LibDataBroker-1.1, LibDBIcon-1.0
+## SavedVariables: FabledUI_PoseidonDB, FabledUI_PoseidonSettings
+
+Core.lua
+Modules/Storage.lua
+Data/Data.lua
+Modules/Derby.lua
+Modules/Counters.lua
+Modules/Stats.lua
+Modules/Nodes.lua
+Modules/Events.lua
+Modules/Learn.lua
+Modules/MapTooltip.lua
+Modules/ImportExport.lua
+Modules/Minimap.lua
+Modules/Journal.lua
+# P3: Active fishing buff tracker.
+Modules/BuffTracker.lua
+UI/Common.lua
+UI/HUD.lua
+UI/Views.lua
+UI/Full.lua
+UI/Controller.lua
+Modules/Settings.lua
+
+# Static Data
+Data/Poseidon_Data.lua
+Data/Poseidon_Items.lua
+Data/Poseidon_TWW.lua
+Data/Poseidon_Achievements.lua
+Data/Poseidon_Guides.lua
+Data/RareFish.lua
+Data/SpecialFish.lua
+Data/SecretFish.lua
+Data/ZoneSkill.lua
+Data/FishingPoles.lua
+Data/FishingBuffs.lua
+Data/FishingSpellIDs.lua
+Data/FishingEnchants.lua

@@ -1,0 +1,16 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Nexus
+## Notes: Universal suite launcher and custom 3rd-party addon hub.
+## Author: FabledUI
+## Version: 1.02.03
+## Category: FabledUI
+## Dependencies: FabledUI_UIToolkit
+## OptionalDeps: FabledUI_DataVault
+## SavedVariables: FabledUI_NexusDB
+
+Core.lua
+Registry.lua
+Widgets.lua
+UI.lua
+Settings.lua
+Integrations.lua

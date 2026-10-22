@@ -1,0 +1,23 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Odyssey
+## Notes: Waypoint platform, tours, audit, and feature gap analysis.
+## Author: FabledUI
+## Version: 2.3.1
+## Category: FabledUI
+## OptionalDeps: TomTom, FabledUI_DataVault, FabledUI_UIToolkit
+## SavedVariables: FabledUI_OdysseyDB
+
+Core.lua
+Storage.lua
+Providers.lua
+Services\WaypointService.lua
+Services\RouteOptimizer.lua
+Services\RouteShare.lua
+Modules\Tours.lua
+Modules\Audit.lua
+Modules\Gaps.lua
+Settings.lua
+UI\HUD.lua
+UI\MainFrame.lua
+UI\RouteOverlay.lua
+UI\MapPins.lua
