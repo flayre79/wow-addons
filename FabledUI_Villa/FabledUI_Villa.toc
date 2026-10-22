@@ -1,0 +1,52 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Villa
+## Notes: Housing intelligence suite for Retail WoW housing. Consolidation platform rebuild.
+## Author: FabledUI
+## Version: 0.30.01
+## X-Nexus-ShortName: Villa
+## IconTexture: 134414
+## Category: FabledUI
+## Dependencies: FabledUI_UIToolkit
+## OptionalDeps: FabledUI_DataVault, FabledUI_DataVault_Villa, FabledUI_Odyssey, TomTom
+## SavedVariables: FabledUI_VillaDB, FabledUI_VillaSettings, FabledUI_VillaCaptureDB
+## AddonCompartmentFunc: FabledUI_Villa_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: FabledUI_Villa_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: FabledUI_Villa_OnAddonCompartmentLeave
+Core.lua
+Storage.lua
+UI.lua
+Data\DyeCrafting.lua
+HomeData.lua
+NormalizedData.lua
+CodexData.lua
+BetterHomesData.lua
+HDGData.lua
+HITData.lua
+DecorVendorData.lua
+HousingVendorData.lua
+Dashboard.lua
+Tabs.lua
+Vendors.lua
+CodexPanels.lua
+ExpandedPanels.lua
+Tracker.lua
+HVPanels.lua
+MapPins.lua
+ZoneOverlay.lua
+Villa_Checklist.lua
+Settings.lua
+Villa_Control.lua
+Villa_ShoppingList.lua
+Villa_Notes.lua
+Villa_ZoneToasts.lua
+Villa_LiveCounts.lua
+Villa_Endeavors.lua
+Villa_AutoQuest.lua
+Villa_Wishlist.lua
+Villa_VendorVisits.lua
+Villa_VendorCapture.lua
+Villa_VendorAssistant.lua
+Villa_CatalogScan.lua
+Villa_AchievementDecor.lua
+Villa_AcquiredAlert.lua
+WorldMapButton.lua

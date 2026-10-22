@@ -1,0 +1,9 @@
+<Bindings>
+    <Binding name="FABLEDUI_VILLA_TOGGLE" header="BINDING_HEADER_FABLEDUI_VILLA" category="ADDONS">
+        <![CDATA[
+        if FabledUI_Villa and FabledUI_Villa.ToggleUI then
+            FabledUI_Villa:ToggleUI()
+        end
+        ]]>
+    </Binding>
+</Bindings>

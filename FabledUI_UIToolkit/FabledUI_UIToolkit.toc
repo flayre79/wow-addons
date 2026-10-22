@@ -1,0 +1,21 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - UIToolkit
+## Notes: Shared UI Toolkit Helpers for the FabledUI Suite (SVC-005)
+## Version: 1.5.0
+## Author: FabledUI
+## Category: FabledUI
+
+Core.lua
+FrameDistributor.lua
+Data\CameraPresets.lua
+Data\CameraPresetData.lua
+ModuleRegistry.lua
+Themes.lua
+Effects.lua
+WindowState.lua
+Ribbon.lua
+Shell.lua
+Toast.lua
+Components.lua
+Preview.lua
+RadarHUD.lua
