@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Knowledge Codex)
+## Notes: Crafty Module — Knowledge tab + per-profession KP source data + Midnight treasure auto-supertrack.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+Knowledge.lua
+KnowledgeVignettes.lua

@@ -1,0 +1,12 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Blacksmithing Data)
+## Notes: LoadOnDemand profession-knowledge slice for Blacksmithing. Loaded on demand by FabledUI_Crafty.
+## Author: FabledUI
+## Version: 3.0.1
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+Knowledge.lua
+Specializations.lua

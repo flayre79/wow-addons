@@ -1,0 +1,14 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Craft History)
+## Notes: Crafty Module — craft log, capture (loot/vendor), farm session telemetry.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+CraftLog.lua
+Capture.lua
+FarmSession.lua
+History.lua
