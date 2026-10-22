@@ -1,0 +1,11 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Advisor)
+## Notes: Crafty Module — contextual recommendations for the open profession session.
+## Author: FabledUI
+## Version: 3.1.0
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+Advisor.lua

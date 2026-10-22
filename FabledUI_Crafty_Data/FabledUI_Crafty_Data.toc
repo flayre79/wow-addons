@@ -1,0 +1,15 @@
+## Interface: 120105, 120100, 120007
+## Title: FabledUI - Crafty (Data)
+## Notes: LoadOnDemand slim data shard - just the namespace stub + small actively-used datasets. The big files (Knowledge per-profession, Assistance, Tokens, Training, Concentration, Vendors, Optional reagents) live in their own LoD shards now.
+## Author: FabledUI
+## Version: 3.0.1
+## Category: FabledUI
+## IconTexture: Interface\Icons\inv_misc_enggizmos_17
+## Dependencies: FabledUI_Crafty
+## LoadOnDemand: 1
+
+Prelude.lua
+KnowledgeData.lua
+Data\MaterialSources.lua
+Data\RecipeSources.lua
+Data\RecipeReagents.lua
